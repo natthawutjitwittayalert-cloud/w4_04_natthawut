@@ -82,9 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ElevatedButton(onPressed: addSong, child: Text("บันทึก")),
             Expanded(
               child: StreamBuilder(
-                stream: FirebaseFirestore.instance
-                    .collection("songs")
-                    .snapshots(),
+                stream: FirebaseFirestore.instance.collection("songs").snapshots(),
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return Center(child: CircularProgressIndicator());
@@ -107,8 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                       return InkWell(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (_) => SongDetail(song: s)),
-                          );
+                          Navigator.push(context, MaterialPageRoute(builder: (_) => SongDetail(song: s)),);
                         },
                         child: Card(child: Center(child: Text(s["songName"]))),
                       );
