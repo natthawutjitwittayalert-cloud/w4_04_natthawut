@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179930083842",
+    "project_id": "w4-04-natthawut",
+    "storage_bucket": "w4-04-natthawut.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179930083842:android:18e405156f57883588ed1b",
+        "android_client_info": {
+          "package_name": "com.example.w4_natthawut_04"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ubXD_tFiUjwzdGYRZVZZEnVvbsAxwpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
